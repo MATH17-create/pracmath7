@@ -23,6 +23,23 @@
       margin: auto;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    .video-frame {
+      position: relative;
+      width: 500px;
+      height: 920px;
+      margin: auto;
+      border-radius: 40px;
+      border: 4px solid limegreen;
+      overflow: hidden;
+      background: #2c2c2c;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
 
     .btn {
       font-size: 45px;
@@ -86,17 +103,15 @@
   <button onclick="window.location.href='https://upload.app/download/pracmath-free/pracmathfree.com/965b56ac587a084e936feeb46363c1e2704d88cf8d7314aebbe81b8b1a091d1c'" class="btn">Download (36.6MB)</button>
   <p>Systeme : Android | Type : apk | Version : 1.0 | Age : +3 years <hr /></p>
   <hr />
-
-  <div class="image-container">
-    <img src="Screenshot_20251025-094531.jpg" />
-    <img src="Screenshot_20251025-094542.jpg" />
-    <img src="Screenshot_20251025-094546.jpg" />
-    <img src="Screenshot_20251025-094542.jpg" />
-    <img src="Screenshot_20251025-094553.jpg" />
-    <img src="Screenshot_20251025-094601.jpg" />
-    <img src="Screenshot_20251025-094610.jpg" />
-    <img src="Screenshot_20251025-094617.jpg"  />
-    
+  <div class="video-frame">
+    <video autoplay loop muted playsinline>
+      <source src="video.mp4" type="video/mp4">
+      متصفحك لا يدعم الفيديو.
+    </video>
+    <div class="decor"></div>
+    <div class="decor2"></div>
+  </div>
+  
   </div>
   <hr />
   <hr />
